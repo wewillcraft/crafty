@@ -1,2 +1,3 @@
 # gohugo-theme-crafty
-Crafty theme for the Hugo static site generator.
+
+Clean hand-crafted theme for [Hugo](https://gohugo.io).
