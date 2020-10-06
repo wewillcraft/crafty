@@ -1,4 +1,4 @@
-# gohugo-theme-crafty
+# Crafty Theme
 
 Clean hand-crafted theme for [Hugo](https://gohugo.io).
 
