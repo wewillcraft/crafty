@@ -12,8 +12,13 @@ tasks:
       npm run start
   - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
     command: |
-      cd exampleSite/
-      hugo server --baseUrl $(gp url 1313) --appendPort=false
+      hugo server \
+        --baseUrl $(gp url 1313) \
+        --appendPort=false \
+        --source "./exampleSite" \
+        --destination "../public" \
+        --themesDir "../.." \
+        --verbose
 ports:
   - port: 1313
     onOpen: open-preview

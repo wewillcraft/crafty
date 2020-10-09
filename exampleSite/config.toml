@@ -1,7 +1,6 @@
-title = "crafty-theme"
+title = "Example Site"
 baseURL = "https://example.com"
 languageCode = "en-us"
 theme = "crafty-theme"
-themesDir = "../.."
 
 googleAnalytics = ""

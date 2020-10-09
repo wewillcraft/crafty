@@ -17,3 +17,6 @@
 # Hugo files
 resources/
 public/
+
+# system artifacts
+.DS_Store
