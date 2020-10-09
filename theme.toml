@@ -1,13 +1,10 @@
 name = "crafty"
 description = "Clean hand-crafted theme for Hugo."
-homepage = "https://github.com/wewillcraft/gohugo-theme-crafty/"
-
+homepage = "https://github.com/wewillcraft/crafty"
 tags = ["company", "blog"]
 features = []
-
 license = "MIT"
-licenselink = "https://github.com/wewillcraft/gohugo-theme-crafty/blob/master/LICENSE.md"
-
+licenselink = "https://github.com/wewillcraft/crafty/blob/master/LICENSE.md"
 min_version = "0.41.0"
 
 [author]
