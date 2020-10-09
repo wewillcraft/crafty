@@ -1,7 +1,0 @@
-title = "crafty"
-baseURL = "https://example.com"
-languageCode = "en-us"
-theme = "crafty"
-themesDir = "../.."
-
-googleAnalytics = ""
