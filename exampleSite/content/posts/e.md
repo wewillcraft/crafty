@@ -6,6 +6,7 @@ tags:
   - tag-2
 categories:
   - category-6
+disableComments: true
 ---
 
 ## Stygias secutum massa aret reperta mea lucem

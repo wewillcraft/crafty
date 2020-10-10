@@ -7,6 +7,12 @@ googleAnalytics = ""
 
 # You need to copy the config below for it to work properly.
 
+[params.utterances]
+  repo = "wewillcraft/crafty-theme"
+  theme = "github-light"
+  issueTerm = "pathname"
+  issueLabel = "utterances-comments"
+
 [[params.humanstxt.team]]
   name = "Some Name"
   role = "Some Role"
