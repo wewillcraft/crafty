@@ -1,8 +1,13 @@
 name = "crafty-theme"
 description = "Clean hand-crafted theme for Hugo."
 homepage = "https://crafty-theme.willcraft.software"
-tags = ["company", "blog"]
-features = []
+tags = [
+  "company",
+  "blog",
+]
+features = [
+  "comments",
+]
 license = "MIT"
 licenselink = "https://github.com/wewillcraft/crafty-theme/blob/master/LICENSE.md"
 min_version = "0.41.0"
