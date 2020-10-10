@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html>
-  {{- partial "head.html" . -}}
-  <body>
-    {{- partial "header.html" . -}}
-    <div id="content">
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode | default `en-us`}}">
+<head>
+  <meta charset="utf-8" />
+
+  <title>{{ block "page-title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <link rel="canonical" href="{{ .Permalink }}" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+<body>
+  {{- partial "header.html" . -}}
+
+  <hr />
+
+  <main>
     {{- block "main" . }}{{- end }}
-    </div>
-    {{- partial "footer.html" . -}}
-  </body>
+  </main>
+
+  <hr />
+
+  {{- partial "footer.html" . -}}
+
+  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+</body>
 </html>

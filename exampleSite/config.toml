@@ -4,3 +4,50 @@ languageCode = "en-us"
 theme = "crafty-theme"
 
 googleAnalytics = ""
+
+# You need to copy the config below for it to work properly.
+
+[[params.humanstxt.team]]
+  name = "Some Name"
+  role = "Some Role"
+
+[[params.humanstxt.team]]
+  name = "Another Name"
+  role = "Another Role"
+
+[[params.humanstxt.thanksTo]]
+  name = "And of course, Name"
+
+[mediaTypes]
+  [mediaTypes."text/htaccess"]
+    suffixes = ["htaccess"]
+  [mediaTypes."text/webmanifest"]
+    suffixes = ["webmanifest"]
+
+[outputs]
+  home = [
+    "HTML",
+    "RSS",
+    "htaccess",
+    "robotstxt",
+    "humanstxt",
+    "sitewebmanifest",
+  ]
+
+[outputFormats]
+  [outputFormats.htaccess]
+    baseName = ""
+    isPlainText = true
+    mediaType = "text/htaccess"
+  [outputFormats.robotstxt]
+    baseName = "robots"
+    isPlainText = true
+    mediaType = "text/plain"
+  [outputFormats.humanstxt]
+    baseName = "humans"
+    isPlainText = true
+    mediaType = "text/plain"
+  [outputFormats.sitewebmanifest]
+    baseName = "site"
+    isPlainText = true
+    mediaType = "text/webmanifest"

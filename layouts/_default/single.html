@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{- partial "post-details.html" . -}}
+
+{{ .Content }}
+
+{{- partial "post-footer.html" . -}}
+
+{{ end }}
