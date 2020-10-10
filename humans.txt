@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Some Name -- Some Role
+    Another Name -- Another Role
+
+# THANKS
+
+    And of course, Name
+
+# TECHNOLOGY COLOPHON
+
+    CSS3
+    HTML5
+    Apache Server Configs
+    jQuery
+    Modernizr
+    Normalize.css
+    Hugo
+    GitHub
