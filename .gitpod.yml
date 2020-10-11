@@ -22,9 +22,3 @@ tasks:
 ports:
   - port: 1313
     onOpen: open-preview
-
-# hugo server \
-#   --source "./exampleSite" \
-#   --destination "../public" \
-#   --themesDir "../.." \
-#   --verbose
