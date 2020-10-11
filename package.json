@@ -1,0 +1,24 @@
+{
+  "name": "crafty-theme",
+  "description": "Clean hand-crafted theme for Hugo.",
+  "version": "0.0.1",
+  "author": {
+    "name": "We Will Craft",
+    "email": "we@willcraft.software",
+    "url": "https://willcraft.software"
+  },
+  "keywords": [
+    "gohugo",
+    "theme"
+  ],
+  "private": true,
+  "homepage": "https://crafty-theme.willcraft.software",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wewillcraft/crafty-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wewillcraft/crafty-theme/issues"
+  },
+  "license": "MIT"
+}

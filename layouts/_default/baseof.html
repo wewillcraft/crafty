@@ -13,7 +13,11 @@
 
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <link rel="apple-touch-icon" href="/images/icon.png" />
+
+  {{ with .Site.Data.webpack_assets.main.css }}
+    <link rel="stylesheet" href="{{ relURL (printf `%s` .) }}" />
+  {{ end }}
 
   <meta name="theme-color" content="#fafafa" />
 </head>
@@ -29,6 +33,10 @@
   <hr />
 
   {{- partial "footer.html" . -}}
+
+  {{ with .Site.Data.webpack_assets.main.js }}
+    <script src="{{ relURL (printf `%s` .) }}"></script>
+  {{ end }}
 
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/google_analytics_async.html" . }}
