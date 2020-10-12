@@ -1,7 +1,4 @@
-<header>
-  <a href="{{ .Site.Home.RelPermalink }}">
-    <h1>{{ .Site.Title }}</h1>
-  </a>
-
+<header class="mb-5">
+  {{- partial "header-branding.html" . -}}
   {{- partial "navbar.html" . -}}
 </header>

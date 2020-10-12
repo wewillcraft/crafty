@@ -4,6 +4,7 @@ languageCode = "en-us"
 theme = "crafty-theme"
 
 googleAnalytics = ""
+summaryLength = 10
 
 # You need to copy the config below for it to work properly.
 

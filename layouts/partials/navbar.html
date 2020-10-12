@@ -1,9 +1,9 @@
-<ul>
-  <li>
+<ul class="flex w-12">
+  <li class="mx-auto p-2">
     <a href="{{ .Site.Home.RelPermalink }}">Home</a>
   </li>
   {{ range .Site.Sections }}
-  <li>
+  <li class="mx-auto p-2">
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </li>
   {{ end }}

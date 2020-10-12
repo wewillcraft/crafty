@@ -1,23 +1,29 @@
 <div>
   <div>
-    <span>Published:</span>
-    <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
+    <span class="text-xs text-gray-600">Published:</span>
+    <span class="text-xs italic">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
   </div>
 
   {{ if .Params.tags }}
   <div>
-    <span>Tags:</span>
+    <span class="text-xs text-gray-600">Tags:</span>
     {{ range .Params.tags }}
-      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+         class="border border-blue-600 bg-blue-600 text-white rounded-sm px-2 text-xs mr-1 leading-3">
+        {{ . }}
+      </a>
     {{ end }}
   </div>
   {{ end }}
 
   {{ if .Params.categories }}
   <div>
-    <span>Categories:</span>
+    <span class="text-xs text-gray-600">Categories:</span>
     {{ range .Params.categories }}
-      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}"
+         class="border border-blue-600 bg-blue-600 text-white rounded-sm px-2 text-xs mr-1 leading-3">
+        {{ . }}
+      </a>
     {{ end }}
   </div>
   {{ end }}
