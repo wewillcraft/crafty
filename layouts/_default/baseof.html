@@ -21,16 +21,12 @@
 
   <meta name="theme-color" content="#fafafa" />
 </head>
-<body>
+<body class="bg-gray-100">
   {{- partial "header.html" . -}}
-
-  <hr />
 
   <main>
     {{- block "main" . }}{{- end }}
   </main>
-
-  <hr />
 
   {{- partial "footer.html" . -}}
 

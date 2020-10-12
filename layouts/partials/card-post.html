@@ -1,0 +1,11 @@
+<div class="bg-white rounded-lg p-6">
+  <a href="{{ .Permalink }}">
+    <h4 class="font-bold leading-tight text-gray-900">{{ .Title }}</h4>
+  </a>
+
+  {{- partial "post-details.html" . -}}
+
+  {{ if .Summary }}
+  <p class="text-sm">{{ .Summary }}</p>
+  {{ end }}
+</div>
