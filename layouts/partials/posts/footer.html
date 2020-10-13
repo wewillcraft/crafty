@@ -1,4 +1,4 @@
 {{ $disableComments := .Params.disableComments | default false }}
 {{ if not $disableComments }}
-  {{- partial "comments-utterances.html" . -}}
+  {{- partial "posts/comments-utterances.html" . -}}
 {{ end }}

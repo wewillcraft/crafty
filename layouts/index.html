@@ -9,7 +9,7 @@
   {{ $blog_posts := where .Site.RegularPages "Section" "posts" }}
   {{ range (first $n_posts $blog_posts) }}
     <li>
-      {{- partial "card-post.html" . -}}
+      {{- partial "posts/card.html" . -}}
     </li>
   {{ end }}
   </ul>

@@ -1,8 +1,10 @@
 <div>
+  {{ if .Params.Date }}
   <div>
     <span class="text-xs text-gray-600">Published:</span>
     <span class="text-xs italic">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
   </div>
+  {{ end }}
 
   {{ if .Params.tags }}
   <div>
