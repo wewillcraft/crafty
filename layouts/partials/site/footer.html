@@ -1,0 +1,32 @@
+<footer class="my-10 text-xs text-center uppercase">
+  <span>
+    &copy;
+    <a href="{{ .Site.BaseURL }}"
+       class="font-bold"
+       target="_blank">
+      {{ with .Site.Copyright | default .Site.Title }}
+      {{ . | safeHTML }}
+      {{ end }}
+    </a>
+    &ndash;
+    {{ now.Format "2006"}}.
+  </span>
+
+  <span>
+    {{ if .Site.Params.footer.showGeneratedByHugo }}
+    generated with
+    <a href="https://gohugo.io"
+       class="font-bold"
+       target="_blank">
+      Hugo</a>
+    {{ end }}
+
+    {{ if .Site.Params.footer.showThemeCredits }}
+    using the
+    <a href="https://github.com/wewillcraft/crafty-theme/"
+      class="font-bold"
+      target="_blank">
+      Crafty theme</a>.
+    {{ end }}
+  </span>
+</footer>

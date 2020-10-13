@@ -8,9 +8,13 @@ summaryLength = 10
 
 # You need to copy the config below for it to work properly.
 
+[params.footer]
+  showGeneratedByHugo = true
+  showThemeCredits = true
+
 [params.utterances]
   repo = "wewillcraft/crafty-theme"
-  theme = "github-light"
+  theme = "preferred-color-scheme"
   issueTerm = "pathname"
   issueLabel = "utterances-comments"
 

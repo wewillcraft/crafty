@@ -12,23 +12,21 @@
   {{ template "_internal/twitter_cards.html" . }}
 
   <link rel="canonical" href="{{ .Permalink }}" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="apple-touch-icon" href="/images/icon.png" />
+
+  {{- partial "site/favicon.html" . -}}
 
   {{ with .Site.Data.webpack_assets.main.css }}
     <link rel="stylesheet" href="{{ relURL (printf `%s` .) }}" />
   {{ end }}
-
-  <meta name="theme-color" content="#fafafa" />
 </head>
 <body class="bg-gray-100">
-  {{- partial "header.html" . -}}
+  {{- partial "site/header.html" . -}}
 
   <main>
     {{- block "main" . }}{{- end }}
   </main>
 
-  {{- partial "footer.html" . -}}
+  {{- partial "site/footer.html" . -}}
 
   {{ with .Site.Data.webpack_assets.main.js }}
     <script src="{{ relURL (printf `%s` .) }}"></script>
