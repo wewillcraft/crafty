@@ -36,7 +36,6 @@ id-your-feature  # additional development branches for new features
 Webpack:
 
 ```bash
-cd src/
 npm install
 
 # run development server
@@ -50,10 +49,20 @@ Hugo server:
 
 ```bash
 # locally
-hugo server --source "./exampleSite" --destination "../public" --themesDir "../.." --verbose
+hugo server \
+  --source "./exampleSite" \
+  --destination "../public" \
+  --themesDir "../.." \
+  --verbose
 
 # via gitpod
-hugo server --baseUrl $(gp url 1313) --appendPort=false --source "./exampleSite" --destination "../public" --themesDir "../.." --verbose
+hugo server \
+  --baseUrl $(gp url 1313) \
+  --appendPort=false \
+  --source "./exampleSite" \
+  --destination "../public" \
+  --themesDir "../.." \
+  --verbose
 ```
 
 ## Features
