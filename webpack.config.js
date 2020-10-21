@@ -1,6 +1,8 @@
 const path = require("path");
 const AssetsPlugin = require("assets-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -52,4 +54,7 @@ module.exports = {
       filename: "styles/[name].[chunkhash].css",
     }),
   ],
+  optimization: {
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+  },
 };
